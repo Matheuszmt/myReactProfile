@@ -1,0 +1,72 @@
+.skills {
+  position: relative;
+  transition: 1s ease-in-out;
+  clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 21rem;
+  height: 33rem;
+  margin-left: 2.5rem;
+  background: #d6a06285;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  cursor: pointer;
+  overflow: hidden;
+  
+}
+
+/* FRONT: Hard Skills */
+.skills-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s;
+  z-index: 2;
+}
+
+.skills-front-content {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* BACK: Soft Skills */
+.skills-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  color: white;
+  display: flex;
+  font-size: larger;
+  font-weight: bold;
+  flex-direction: column;
+  justify-content:center;
+  opacity: 0;
+  transition: opacity 0.5s;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Hover: mostra Soft Skills */
+.skills:hover .skills-back {
+  opacity: 1;
+}
+
+.skills:hover .skills-front {
+  opacity: 0;
+}
+
+@media (min-width: 1024px) {
+  .skills {
+  width: 50rem;
+  height: 35em;
+  }
+
+}
+

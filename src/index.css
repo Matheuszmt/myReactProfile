@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-image: url(./img/background.png);
+  background-repeat: no-repeat;        /* Não repetir a imagem */
+  background-position: right top;      /* Canto superior direito */
+  background-size: auto;               /* Mantém o tamanho original da imagem */
+  background-attachment: scroll;        /* Fixa a imagem ao rolar a página */
+  background-color: antiquewhite;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
